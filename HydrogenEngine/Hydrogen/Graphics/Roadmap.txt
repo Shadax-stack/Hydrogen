@@ -1,0 +1,5 @@
+11/2/2020 - Fix parallax mapping if possible - FAILED, UNKNOWN ERROR
+11/2/2020 - Create the .cpp/.h files for loading stuff - FINISHED 11/2
+11/2/2020 - Move the model format to XML
+11/2/2020 - Create a JSON scene format
+11/2/2020 - Restructure the renderer arctichture so the skybox is a draw command

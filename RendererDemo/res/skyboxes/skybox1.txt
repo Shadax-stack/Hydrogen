@@ -1,0 +1,6 @@
+res/textures/Daylight Box_Right.bmp
+res/textures/Daylight Box_Left.bmp
+res/textures/Daylight Box_Top.bmp
+res/textures/Daylight Box_Bottom.bmp
+res/textures/Daylight Box_Front.bmp
+res/textures/Daylight Box_Back.bmp

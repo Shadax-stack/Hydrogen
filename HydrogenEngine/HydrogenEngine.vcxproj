@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hydrogen\Core\HydrogenEngine.h" />
+    <ClInclude Include="Hydrogen\Graphics\Atmosphere.h" />
+    <ClInclude Include="Hydrogen\Graphics\Buffer.h" />
+    <ClInclude Include="Hydrogen\Graphics\Color.h" />
+    <ClInclude Include="Hydrogen\Graphics\CommandBuffer.h" />
+    <ClInclude Include="Hydrogen\Graphics\Component.h" />
+    <ClInclude Include="Hydrogen\Graphics\Environment.h" />
+    <ClInclude Include="Hydrogen\Graphics\Framebuffer.h" />
+    <ClInclude Include="Hydrogen\Graphics\Handle.h" />
+    <ClInclude Include="Hydrogen\Graphics\Lighting.h" />
+    <ClInclude Include="Hydrogen\Graphics\Loader.h" />
+    <ClInclude Include="Hydrogen\Graphics\Material.h" />
+    <ClInclude Include="Hydrogen\Graphics\Model.h" />
+    <ClInclude Include="Hydrogen\Graphics\Object.h" />
+    <ClInclude Include="Hydrogen\Graphics\Skybox.h" />
+    <ClInclude Include="Hydrogen\Graphics\Texture.h" />
+    <ClInclude Include="Hydrogen\Graphics\Texture2D.h" />
+    <ClInclude Include="Hydrogen\Graphics\TextureCubemap.h" />
+    <ClInclude Include="Hydrogen\Graphics\TextureParameters.h" />
+    <ClInclude Include="Hydrogen\Graphics\Vertex.h" />
+    <ClInclude Include="Hydrogen\Math\Camera.h" />
+    <ClInclude Include="Hydrogen\Graphics\Mesh.h" />
+    <ClInclude Include="Hydrogen\Graphics\Renderer.h" />
+    <ClInclude Include="Hydrogen\Graphics\Shader.h" />
+    <ClInclude Include="Hydrogen\Math\LinearAlgebra.h" />
+    <ClInclude Include="Hydrogen\Math\Transform.h" />
+    <ClInclude Include="Hydrogen\Graphics\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hydrogen\Core\HydrogenEngine.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Buffer.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Color.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Environment.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Framebuffer.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Handle.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Lighting.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Loader.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Material.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Mesh.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Model.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Object.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Renderer.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Shader.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Skybox.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Texture.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Texture2D.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\TextureCubemap.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\TextureParameters.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Vertex.cpp" />
+    <ClCompile Include="Hydrogen\Graphics\Window.cpp" />
+    <ClCompile Include="Hydrogen\Math\Camera.cpp" />
+    <ClCompile Include="Hydrogen\Math\LinearAlgebra.cpp" />
+    <ClCompile Include="Hydrogen\Math\Transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Hydrogen\Graphics\Rewrite Plan.txt" />
+    <Text Include="Hydrogen\Graphics\Roadmap.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{3BA85BBE-5A83-48F8-8B49-B340D48C781D}</ProjectGuid>
+    <RootNamespace>HydrogenEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)lib/zlibstatic.lib;$(SolutionDir)lib/assimp-vc142-mt.lib;$(SolutionDir)lib/soil2.lib;$(SolutionDir)lib/soil.lib;opengl32.lib;$(SolutionDir)lib/glew32s.lib;$(SolutionDir)lib/glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)lib/zlibstatic.lib;$(SolutionDir)lib/assimp-vc142-mt.lib;$(SolutionDir)lib/soil2.lib;$(SolutionDir)lib/soil.lib;opengl32.lib;$(SolutionDir)lib/glew32s.lib;$(SolutionDir)lib/glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)lib/libexslt.lib;$(SolutionDir)lib/libxslt.lib;$(SolutionDir)lib/libexpat.lib;$(SolutionDir)lib/libxml2-static.lib;$(SolutionDir)lib/zlibstatic.lib;$(SolutionDir)lib/assimp-vc142-mt.lib;$(SolutionDir)lib/soil2.lib;$(SolutionDir)lib/soil.lib;opengl32.lib;$(SolutionDir)lib/glew32s.lib;$(SolutionDir)lib/glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HYDROGEN_BUILD;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)lib/libexslt.lib;$(SolutionDir)lib/libxslt.lib;$(SolutionDir)lib/libexpat.lib;$(SolutionDir)lib/libxml2-static.lib;$(SolutionDir)lib/zlibstatic.lib;$(SolutionDir)lib/assimp-vc142-mt.lib;$(SolutionDir)lib/soil2.lib;$(SolutionDir)lib/soil.lib;opengl32.lib;$(SolutionDir)lib/glew32s.lib;$(SolutionDir)lib/glfw3.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

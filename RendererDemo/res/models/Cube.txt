@@ -1,0 +1,7 @@
+res/objects/cube.obj
+res/textures/scuffed-metal1_albedo.png
+res/textures/scuffed-metal1_normal-ogl.png
+res/textures/scuffed-metal1_height.png
+res/textures/scuffed-metal1_metallic.png
+res/textures/scuffed-metal1_roughness.png
+res/textures/scuffed-metal1_ao.png

@@ -1,0 +1,7 @@
+res/objects/cube.obj
+res/textures/gray-bricks1-albedo.png
+res/textures/gray-bricks1-Normal-dx.png
+res/textures/gray-bricks1-Height.png
+res/textures/gray-bricks1-Metallic.png
+res/textures/gray-bricks1-Roughness.png
+res/textures/gray-bricks1-ao.png
